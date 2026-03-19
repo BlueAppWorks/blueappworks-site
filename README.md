@@ -1,6 +1,6 @@
 # Blue App Works — Corporate Website
 
-**URL**: https://blueappworks.com (予定)  
+**URL**: https://www.blueappworks.com
 **開業日**: 2026年1月29日  
 **事業者**: 喜田紘介 / Blue App Works
 
@@ -9,7 +9,7 @@
 ## プロジェクト概要
 
 Blue App Worksの静的コーポレートサイトです。  
-Snowflake-nativeのアプリ実行・管理プラットフォーム「Blue App Gallery」のランディングページおよびコーポレート情報ページで構成されています。
+Snowflake Nativeのアプリ実行・管理プラットフォーム「Blue App Gallery」のランディングページおよびコーポレート情報ページで構成されています。
 
 ---
 
