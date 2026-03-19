@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue App Works | Snowflake-Native App Platform</title>
+  <meta name="description" content="Blue App Works provides middleware and gallery solutions for Snowflake-native business applications — turning workflow ideas into running apps at any organizational scale." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232d7dd2'/><text y='.9em' font-size='70' x='15'>B</text></svg>" />
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header id="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Blue App Works" class="nav-logo-img" />
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#problem">課題</a>
+      <a href="#service">サービス</a>
+      <a href="#how">仕組み</a>
+      <a href="#pricing">料金</a>
+      <a href="#about">About</a>
+      <a href="contact.html" class="nav-cta">お問い合わせ</a>
+    </nav>
+    <div class="hamburger" id="hamburger" aria-label="メニュー" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1 class="hero-title">
+        業務改善アイデアを<br>
+        <span>すぐ動くアプリ</span>に。<br>
+        組織全体へ届ける。
+      </h1>
+      <p class="hero-desc">
+        生成AIが作ったアプリを、Snowflake上で安全・簡単に起動・管理・共有する
+        ミドルウェア＆ギャラリープラットフォームを提供します。
+        大掛かりなSaaS契約も、複雑なローコード環境も不要です。
+      </p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">
+          ✉ デモを依頼する
+        </a>
+        <a href="#service" class="btn btn-outline">
+          サービスを見る →
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="gallery-mockup">
+        <div class="gallery-mockup-bar">
+          <div class="gmb-dots">
+            <span style="background:#ef4444"></span>
+            <span style="background:#f59e0b"></span>
+            <span style="background:#10b981"></span>
+          </div>
+          <div class="gmb-title">Blue App Gallery</div>
+          <div class="gmb-search">🔍 Search apps...</div>
+        </div>
+        <div class="gallery-grid">
+          <!-- Row 1 -->
+          <div class="gc" data-status="running">
+            <div class="gc-header"><div class="gc-icon" style="background:#dbeafe">📊</div><div class="gc-meta"><div class="gc-name">Sales Dashboard</div><div class="gc-ver">v2.1 · Analytics</div></div></div>
+            <div class="gc-desc">Real-time sales metrics and KPI tracking</div>
+            <div class="gc-footer"><span class="gc-dot running"></span><span class="gc-status">Running</span><button class="gc-btn open">Open ↗</button></div>
+          </div>
+          <div class="gc" data-status="running">
+            <div class="gc-header"><div class="gc-icon" style="background:#d1fae5">📦</div><div class="gc-meta"><div class="gc-name">Inventory Tracker</div><div class="gc-ver">v1.4 · Operations</div></div></div>
+            <div class="gc-desc">Warehouse inventory monitoring system</div>
+            <div class="gc-footer"><span class="gc-dot running"></span><span class="gc-status">Running</span><button class="gc-btn open">Open ↗</button></div>
+          </div>
+          <div class="gc" data-status="running">
+            <div class="gc-header"><div class="gc-icon" style="background:#ede9fe">🤖</div><div class="gc-meta"><div class="gc-name">Churn Predictor</div><div class="gc-ver">v3.0 · AI/ML</div></div></div>
+            <div class="gc-desc">ML-powered customer churn prediction</div>
+            <div class="gc-footer"><span class="gc-dot running"></span><span class="gc-status">Running</span><button class="gc-btn open">Open ↗</button></div>
+          </div>
+          <!-- Row 2 -->
+          <div class="gc" data-status="running">
+            <div class="gc-header"><div class="gc-icon" style="background:#fef9c3">💰</div><div class="gc-meta"><div class="gc-name">Cost Optimizer</div><div class="gc-ver">v1.2 · Analytics</div></div></div>
+            <div class="gc-desc">Snowflake credit usage analysis and optimization</div>
+            <div class="gc-footer"><span class="gc-dot running"></span><span class="gc-status">Running</span><button class="gc-btn open">Open ↗</button></div>
+          </div>
+          <div class="gc" data-status="stopped">
+            <div class="gc-header"><div class="gc-icon" style="background:#fce7f3">🔍</div><div class="gc-meta"><div class="gc-name">Data Quality Monitor</div><div class="gc-ver">v2.0 · Governance</div></div></div>
+            <div class="gc-desc">Automated data quality checks and alerts</div>
+            <div class="gc-footer"><span class="gc-dot stopped"></span><span class="gc-status">Stopped</span><button class="gc-btn launch">Launch ▶</button></div>
+          </div>
+          <div class="gc" data-status="running">
+            <div class="gc-header"><div class="gc-icon" style="background:#e0f2fe">💬</div><div class="gc-meta"><div class="gc-name">LLM Chatbot</div><div class="gc-ver">v1.0 · AI/ML</div></div></div>
+            <div class="gc-desc">Cortex AI-powered conversational assistant</div>
+            <div class="gc-footer"><span class="gc-dot running"></span><span class="gc-status">Running</span><button class="gc-btn open">Open ↗</button></div>
+          </div>
+          <!-- Row 3 -->
+          <div class="gc" data-status="running">
+            <div class="gc-header"><div class="gc-icon" style="background:#fef3c7">⚠️</div><div class="gc-meta"><div class="gc-name">Anomaly Detector</div><div class="gc-ver">v1.1 · AI/ML</div></div></div>
+            <div class="gc-desc">Time-series anomaly detection for metrics</div>
+            <div class="gc-footer"><span class="gc-dot running"></span><span class="gc-status">Running</span><button class="gc-btn open">Open ↗</button></div>
+          </div>
+          <div class="gc" data-status="running">
+            <div class="gc-header"><div class="gc-icon" style="background:#fce7f3">📝</div><div class="gc-meta"><div class="gc-name">Report Builder</div><div class="gc-ver">v2.3 · Analytics</div></div></div>
+            <div class="gc-desc">Drag-and-drop report creation tool</div>
+            <div class="gc-footer"><span class="gc-dot running"></span><span class="gc-status">Running</span><button class="gc-btn open">Open ↗</button></div>
+          </div>
+          <div class="gc" data-status="stopped">
+            <div class="gc-header"><div class="gc-icon" style="background:#dbeafe">🔄</div><div class="gc-meta"><div class="gc-name">ETL Pipeline Manager</div><div class="gc-ver">v3.1 · Operations</div></div></div>
+            <div class="gc-desc">Visual ETL pipeline orchestration</div>
+            <div class="gc-footer"><span class="gc-dot stopped"></span><span class="gc-status">Stopped</span><button class="gc-btn launch">Launch ▶</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROBLEM ========== -->
+<section class="section" id="problem">
+  <div class="container">
+    <div class="badge">Problem</div>
+    <h2 class="section-title">なぜ業務アプリは<br>「作れても使われない」のか</h2>
+    <p class="section-sub">
+      生成AIの登場でアプリ開発のハードルは劇的に下がりました。
+      しかし「作ること」と「組織で使われること」の間には、まだ大きな壁があります。
+    </p>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-icon" style="background:#f0fdf4">🚀</div>
+        <h3>配布・展開手段の不在</h3>
+        <p>個人が作ったアプリを隣の人、チーム、部署、全社へとスケールさせる手段がない。アイデアは個人の手元で止まってしまいます。</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon" style="background:#fef2f2">🔒</div>
+        <h3>利用者の権限ハードル</h3>
+        <p>Snowflakeの権限設定は専門知識が必要で、一般ユーザーがアプリを起動するたびに管理者対応が発生。日常業務では使い続けられません。</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon" style="background:#fff7ed">🌐</div>
+        <h3>アプリの乱立・管理難</h3>
+        <p>部門ごとにバラバラにアプリが生まれ、どこに何があるか分からない。バージョン管理も属人化し、ガバナンスが崩壊していきます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICE ========== -->
+<section class="section section-dark" id="service">
+  <div class="container">
+    <div class="badge">Service</div>
+    <h2 class="section-title" style="color:#fff">Snowflake as an<br>Operational Apps Platform</h2>
+    <p class="section-sub">
+      Snowflakeはデータ分析基盤にとどまりません。業務アプリの実行・配布・管理まで担う<br>新しいプラットフォームとしての使い方を、Blue App Worksが切り拓きます。
+    </p>
+    <div class="solution-grid">
+      <!-- 01 Infrastructure -->
+      <div class="solution-card">
+        <div class="solution-num">01</div>
+        <h3>インフラの悩みから解放</h3>
+        <p style="margin-bottom:14px">
+          アプリの実行環境を別途用意する必要はありません。すでに組織が持つSnowflake環境がそのまま業務アプリの実行基盤になります。配布・権限・管理といった課題をインフラレベルで解決し、アイデアをすぐ動かせる状態へ。
+        </p>
+        <ul class="sol-list">
+          <li>❄️ 既存のSnowflake環境がそのままアプリ基盤に</li>
+          <li>🔧 別途サーバー・クラウド環境の構築不要</li>
+          <li>🔒 Snowflakeのセキュリティモデルをそのまま継承</li>
+          <li>🚫 データがSnowflakeの外に出ない設計</li>
+        </ul>
+      </div>
+      <!-- 02 Marketplace -->
+      <div class="solution-card">
+        <div class="solution-num">02</div>
+        <h3>アプリはMarketplaceで入手、または自作して即デプロイ</h3>
+        <p style="margin-bottom:14px">
+          Snowflake Marketplaceに並ぶ業務アプリをワンクリックで導入するか、生成AIで自作したアプリをそのままデプロイするか。どちらも同じ環境で動かせます。既製品も自作も、組織の実情に合わせて自由に組み合わせられます。
+        </p>
+        <ul class="sol-list">
+          <li>🛒 Marketplaceからポチッと業務アプリを入手</li>
+          <li>🤖 生成AIで作ったアプリをそのままデプロイ</li>
+          <li>🔄 既製品と自作を同一環境で混在利用</li>
+          <li>📦 Blue App Gallery Operator（無償）でアプリを管理</li>
+        </ul>
+      </div>
+      <!-- 03 Gallery -->
+      <div class="solution-card">
+        <div class="solution-num">03</div>
+        <div class="sol-free-badge">🆓 無償提供</div>
+        <h3>Blue App Gallery</h3>
+        <p style="margin-bottom:14px">
+          業務ユーザーがSnowflakeの権限や管理操作を一切意識せずに、アプリの利用だけに集中できるSaaSです。Snowflake上のアプリをギャラリー形式で一覧表示し、クリック1つで起動・切り替えが可能。誰でもすぐに使い始められます。
+        </p>
+        <ul class="sol-list">
+          <li>🖱 クリックするだけでアプリを起動・切り替え</li>
+          <li>🔍 カテゴリ・検索でアプリを探せる</li>
+          <li>👤 権限・管理操作を意識しないシンプルなUI</li>
+          <li>📱 ブラウザからすぐに利用開始</li>
+        </ul>
+        <p class="sol-price">SaaSサービスとして無償で提供</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== HOW IT WORKS ========== -->
+<section class="section section-alt" id="how">
+  <div class="container">
+    <div class="badge">How It Works</div>
+    <h2 class="section-title">3ステップで導入完了</h2>
+    <p class="section-sub">
+      複雑なインフラ構築は不要。Snowflakeアカウントがあればすぐに始められます。
+    </p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-circle">🛒</div>
+        <h3>STEP 1<br>Marketplaceから無料インストール</h3>
+        <p>Snowflake MarketplaceでBlue App Galleryを検索し、ワンクリックで環境にインストール。Snowflakeアカウントがあれば今すぐ始められます。</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">⚙️</div>
+        <h3>STEP 2<br>権限設定とアプリ登録</h3>
+        <p>管理者がGalleryに必要最小限の権限を付与。既存アプリやAIが生成したアプリをGalleryに登録するだけで、全ユーザーがアクセス可能になります。</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">▶️</div>
+        <h3>STEP 3<br>クリックで起動・組織へ展開</h3>
+        <p>利用者はGallery画面でアプリを選んでクリック。権限の複雑さを意識せずアプリを起動・利用。横展開も管理者の操作だけで完了します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ========== PRICING ========== -->
+<section class="section section-alt" id="pricing">
+  <div class="container">
+    <div class="badge">Pricing</div>
+    <h2 class="section-title">料金について</h2>
+    <p class="section-sub">
+      現在はβ提供期間として、Blue App GalleryおよびBlue App Gallery Operatorはすべて<strong>無償</strong>でご利用いただけます。
+    </p>
+
+    <!-- Free banner -->
+    <div class="pricing-free-banner">
+      <div class="pfb-icon">🎁</div>
+      <div class="pfb-body">
+        <div class="pfb-title">エンドユーザー向けには、ずっと無償で。</div>
+        <p class="pfb-desc">Blue App Gallery（SaaS）および Blue App Gallery Operator（Snowflake Marketplace）は、現在無償でご利用いただけます。業務ユーザーが安心してアプリを使い続けられるよう、エンドユーザー向けには今後も無償で提供し続けることを目指しています。</p>
+      </div>
+    </div>
+
+    <!-- Revenue model note -->
+    <div class="pricing-model-grid">
+      <div class="pricing-model-card">
+        <div class="pmcard-icon">🤝</div>
+        <h3>アプリプロバイダーの方へ</h3>
+        <p>
+          業務パッケージをSnowflake Marketplaceという新たなチャネルとして確立したいとお考えの企業担当者様、ぜひご連絡ください。将来的にはSnowflake Native Apps対応から出品・プロモーション支援まで、パートナーとして伴走することを目指しています。
+        </p>
+        <a href="contact.html?type=marketplace" class="btn btn-primary" style="margin-top:20px;border-radius:var(--radius)">お問い合わせ →</a>
+      </div>
+      <div class="pricing-model-card pricing-model-card--support">
+        <div class="pmcard-icon">🙏</div>
+        <h3>プロジェクトへのご支援について</h3>
+        <p>
+          本プロジェクトは、Snowflakeを業務アプリの実行基盤として活用するという新しいアプローチの実証から始まっています。まずは多くの方に使っていただき、その実績と賛同がこのプロジェクトの何よりの推進力になります。
+        </p>
+        <p style="margin-top:12px">
+          将来的にはインフラ維持のための寄付を募ることも想定しています。無償でのご利用を続けながら、もし本プロジェクトの取り組みにご共感いただけましたら、そのときはぜひご支援のほどよろしくお願いいたします。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="badge">About</div>
+    <h2 class="section-title">Blue App Worksについて</h2>
+    <div class="about-single">
+      <p class="about-lead">
+        「アイデアが使われる組織」を作るために。
+      </p>
+      <p>
+        DXの文脈において、企業・部署・個人が業務改善アイデアをアプリ化しようとする動きが加速しています。
+        生成AIのおかげで「作る」ハードルは劇的に下がりました。
+      </p>
+      <p>
+        しかし本当の課題は「実行環境の整備」と「組織への浸透」です。
+        Blue App Worksは、Snowflakeを実行基盤として、アプリが生まれてから組織全体で使われるまでの
+        プロセスを一気通貫でサポートします。
+      </p>
+      <p>
+        大掛かりなSaaS契約も、複雑なローコードツールも不要。
+        あなたのSnowflake環境を最大限活用し、
+        業務アプリが「作って終わり」ではなく「使われ続ける」仕組みを提供します。
+      </p>
+      <div style="margin-top:32px;display:flex;gap:16px;flex-wrap:wrap">
+        <a href="contact.html" class="btn btn-primary">お問い合わせ</a>
+        <a href="privacy.html" class="btn btn-outline" style="color:var(--blue-accent);border-color:var(--blue-accent)">プライバシーポリシー</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="section section-dark" style="text-align:center">
+  <div class="container">
+    <div class="badge">Get Started</div>
+    <h2 style="color:#fff;margin-bottom:16px">今すぐSnowflakeアプリを<br>組織へ届けよう</h2>
+    <p style="max-width:520px;margin:0 auto 40px;font-size:1.05rem">
+      まずはデモ環境でBlue App Galleryを体験してください。
+      お気軽にお問い合わせください。
+    </p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a href="contact.html" class="btn btn-primary">✉ デモを申し込む</a>
+      <a href="contact.html?type=snowflake" class="btn btn-outline">Snowflake環境を相談する</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="Blue App Works" />
+      </div>
+      <p class="footer-desc">
+        Snowflake-nativeのアプリ実行・管理プラットフォームを提供。
+        業務改善アイデアを組織全体へ届けます。
+      </p>
+    </div>
+    <div class="footer-col">
+      <h4>サービス</h4>
+      <ul>
+        <li><a href="#service">Gallery SaaS</a></li>
+        <li><a href="#service">セルフホスト版</a></li>
+        <li><a href="#service">伴走開発支援</a></li>
+        <li><a href="#pricing">料金</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>会社情報</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tech">技術スタック</a></li>
+        <li><a href="privacy.html">プライバシーポリシー</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>お問い合わせ</h4>
+      <ul>
+        <li><a href="contact.html">デモ申し込み</a></li>
+        <li><a href="mailto:contact@blueappworks.com">contact@blueappworks.com</a></li>
+        <li><a href="mailto:support@blueappworks.com">support@blueappworks.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Blue App Works (Blue App Works / 喜田紘介). All rights reserved.</span>
+    <a href="privacy.html" style="color:rgba(255,255,255,0.45);font-size:0.82rem">Privacy Policy</a>
+  </div>
+</footer>
+
+<script>
+  // hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  hamburger.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') navLinks.classList.toggle('open');
+  });
+
+  // header scroll effect
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.style.background = window.scrollY > 40
+      ? 'rgba(10,37,64,0.98)'
+      : 'rgba(10,37,64,0.95)';
+  });
+
+  // smooth reveal on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.problem-card, .solution-card, .step, .tech-pill, .pricing-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(24px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
