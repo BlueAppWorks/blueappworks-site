@@ -726,13 +726,23 @@ footer {
    NAV LOGO IMAGE
 ---------------------------------------- */
 .nav-logo-img {
-  height: 44px;
+  height: 36px;
   width: auto;
   display: block;
-  filter: brightness(0) invert(1);
   transition: opacity var(--transition);
 }
 .nav-logo-img:hover { opacity: 0.85; }
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-logo-text {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
 
 /* ----------------------------------------
    GALLERY MOCKUP (Hero visual)
@@ -986,7 +996,6 @@ footer {
 .footer-logo img {
   height: 28px;
   width: auto;
-  filter: brightness(0) invert(1);
 }
 
 /* ----------------------------------------
