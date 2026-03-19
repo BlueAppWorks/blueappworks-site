@@ -220,8 +220,17 @@ header {
   0%, 100% { opacity: 1; transform: scale(1); }
   50% { opacity: 0.5; transform: scale(1.4); }
 }
-.hero-title { color: var(--white); margin-bottom: 24px; }
-.hero-title span { color: #7ab8f5; }
+.hero-title {
+  color: var(--white);
+  margin-bottom: 24px;
+  font-size: clamp(1.6rem, 4.5vw, 3.2rem);
+}
+.hero-title > span.hero-line {
+  display: block;
+  white-space: nowrap;
+}
+.hero-title span span,
+.hero-title .hero-line > span { color: #7ab8f5; }
 .hero-desc {
   color: rgba(255,255,255,0.75);
   font-size: 1.1rem;
