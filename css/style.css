@@ -164,24 +164,21 @@ header {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(155deg, var(--blue-dark) 0%, #0e3060 60%, #1a4a8a 100%);
+  background: url('../images/stayblue1.png') center/cover no-repeat;
   position: relative;
   overflow: hidden;
   padding-top: 72px;
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background:
-    radial-gradient(ellipse 80% 60% at 70% 50%, rgba(45,125,210,0.18) 0%, transparent 70%),
-    radial-gradient(ellipse 50% 80% at 10% 80%, rgba(122,184,245,0.10) 0%, transparent 60%);
+  background: linear-gradient(180deg, rgba(10,37,64,0.45) 0%, rgba(10,37,64,0.65) 100%);
   pointer-events: none;
 }
 /* grid dots */
 .hero::before {
   content: '';
   position: absolute; inset: 0;
-  background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
-  background-size: 40px 40px;
+  background: none;
   pointer-events: none;
 }
 .hero-inner {
@@ -231,6 +228,28 @@ header {
 }
 .hero-title span span,
 .hero-title .hero-line > span { color: #7ab8f5; }
+.hero-inner--brand {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-title--brand {
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+.hero-blue {
+  color: #7ab8f5;
+}
+.hero-desc--brand {
+  text-align: center;
+  max-width: 640px;
+  font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+  line-height: 2;
+  color: rgba(255,255,255,0.85);
+}
 .hero-desc {
   color: rgba(255,255,255,0.75);
   font-size: 1.1rem;
