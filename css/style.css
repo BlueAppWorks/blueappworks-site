@@ -266,6 +266,12 @@ header {
 .hero-blue {
   color: #7ab8f5;
 }
+.hero-catchphrase {
+  width: clamp(320px, 60vw, 700px);
+  height: auto;
+  margin-bottom: 24px;
+  filter: drop-shadow(0 2px 16px rgba(0,0,0,0.25));
+}
 .hero-desc--brand {
   text-align: center;
   max-width: 640px;
