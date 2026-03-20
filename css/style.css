@@ -430,6 +430,48 @@ header {
 .solution-card h3 { color: var(--white); margin-bottom: 10px; }
 .solution-card p { font-size: 0.93rem; }
 
+/* Service layout: blueprint + points */
+.service-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.service-blueprint img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+}
+.service-points {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.service-point {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.service-point-num {
+  font-family: var(--font-en);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgba(255,255,255,0.15);
+  flex-shrink: 0;
+  line-height: 1;
+  padding-top: 2px;
+}
+.service-point-body h3 {
+  color: var(--white);
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+.service-point-body p {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.6;
+}
+
 /* ----------------------------------------
    HOW IT WORKS
 ---------------------------------------- */
@@ -1067,6 +1109,7 @@ footer {
   .hero-inner { flex-direction: column; padding: 60px 24px; }
   .hero-visual { display: none; }
   .pricing-card.featured { transform: scale(1); }
+  .service-layout { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   .nav-links { display: none; }
