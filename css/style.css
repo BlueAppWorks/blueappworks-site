@@ -777,7 +777,7 @@ footer {
    NAV LOGO IMAGE
 ---------------------------------------- */
 .nav-logo-img {
-  height: 36px;
+  height: 32px;
   width: auto;
   display: block;
   transition: opacity var(--transition);
@@ -786,13 +786,6 @@ footer {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-.nav-logo-text {
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.1rem;
-  letter-spacing: 0.02em;
 }
 
 /* ----------------------------------------
