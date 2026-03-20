@@ -433,12 +433,13 @@ header {
 /* Service layout: blueprint + points */
 .service-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 5fr 6fr;
   gap: 48px;
-  align-items: start;
+  align-items: center;
 }
 .service-blueprint img {
   width: 100%;
+  max-width: 480px;
   height: auto;
   border-radius: var(--radius-lg);
 }
