@@ -21,7 +21,13 @@ BASELINE_Y = 46
 
 # BLUE の推定位置 (rect クリップ用、多少のずれは許容される)
 # Montserrat 600 weight "STAY " ≈ 115px, Montserrat 800 "BLUE" ≈ 130px
-BLUE_RECT_X = 130
+# テキスト中央寄せ
+TEXT_X = VB_W // 2   # 400
+
+# BLUE の推定位置 (text-anchor=middle で中央配置した場合)
+# 全文幅 ≈ 700px → 開始x ≈ 400 - 350 = 50
+# "STAY " ≈ 115px → BLUE開始 ≈ 50 + 115 = 165
+BLUE_RECT_X = 200
 BLUE_RECT_W = 141
 
 # モザイクセル
@@ -57,9 +63,10 @@ def get_color(col, row):
 
 
 def text_with_spans(x, y, extra_attrs=""):
-    """全文テキストを tspan 付きで生成"""
+    """全文テキストを tspan 付きで生成（中央寄せ）"""
     return (
         f'<text x="{x}" y="{y}" '
+        f'text-anchor="middle" '
         f'font-family="{FONT_FAMILY}" '
         f'font-size="{FONT_SIZE}" '
         f'letter-spacing="0"{extra_attrs}>'
@@ -83,7 +90,7 @@ def generate_svg():
     parts.append('  <defs>')
     # clipPath 1: 全文テキストの形状 (全文字がクリップ領域)
     parts.append('    <clipPath id="text-shape">')
-    parts.append(f'      {text_with_spans(0, BASELINE_Y)}')
+    parts.append(f'      {text_with_spans(TEXT_X, BASELINE_Y)}')
     parts.append('    </clipPath>')
     # clipPath 2: BLUE 領域の矩形 (BLUE のある範囲だけに制限)
     parts.append('    <clipPath id="blue-region">')
@@ -95,7 +102,7 @@ def generate_svg():
     parts.append('  </defs>')
 
     # --- ベースレイヤー: 全文テキスト (ブルーグレー) ---
-    parts.append(f'  {text_with_spans(0, BASELINE_Y)}')
+    parts.append(f'  {text_with_spans(TEXT_X, BASELINE_Y)}')
 
     # --- モザイクオーバーレイ: テキスト形状 × BLUE領域 の二重クリップ ---
     parts.append('  <g clip-path="url(#text-shape)">')
