@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,17 +8,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="images/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../images/icon.svg" type="image/svg+xml" />
   <link rel="alternate" hreflang="ja" href="https://www.blueappworks.com/" />
   <link rel="alternate" hreflang="en" href="https://www.blueappworks.com/en/" />
   <script>
+    // Auto-redirect to Japanese if user prefers Japanese
     (function() {
       var pref = localStorage.getItem('baw-lang-pref');
-      if (pref === 'en') { window.location.replace('en/index.html'); return; }
-      if (pref === 'ja') return;
-      var lang = (navigator.language || navigator.languages && navigator.languages[0] || 'ja');
-      if (!lang.startsWith('ja')) { window.location.replace('en/index.html'); }
+      if (pref === 'ja') { window.location.replace('../index.html'); return; }
     })();
   </script>
 </head>
@@ -28,17 +26,17 @@
 <header id="site-header">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
-      <img src="images/logo.svg" alt="Blue App Works" class="nav-logo-img" />
+      <img src="../images/logo.svg" alt="Blue App Works" class="nav-logo-img" />
     </a>
     <nav class="nav-links" id="nav-links">
-      <a href="#service">サービス</a>
-      <a href="#problem">課題</a>
-      <a href="#how">仕組み</a>
-      <a href="#pricing">料金</a>
+      <a href="#service">Service</a>
+      <a href="#problem">Challenges</a>
+      <a href="#how">How It Works</a>
+      <a href="#pricing">Pricing</a>
       <a href="#about">About</a>
-      <a href="contact.html" class="nav-cta">お問い合わせ</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
     </nav>
-    <div class="hamburger" id="hamburger" aria-label="メニュー" role="button" tabindex="0">
+    <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
       <span></span><span></span><span></span>
     </div>
   </div>
@@ -48,18 +46,18 @@
 <section class="hero" id="top">
   <div class="hero-bg"></div>
   <div class="hero-inner hero-inner--brand">
-    <img src="images/stayblue-staycurious-white.svg" alt="Stay Blue, Stay Curious" class="hero-catchphrase" />
+    <img src="../images/stayblue-staycurious-white.svg" alt="Stay Blue, Stay Curious" class="hero-catchphrase" />
     <p class="hero-desc hero-desc--brand">
-      Blueは、Snowflakeの色、PostgreSQLの色。<br>
-      そして、好奇心とアイデアが形になる「はじまり」の色。<br>
-      まだ誰も歩いていない領域へ、アイデアを形にするアイデアを届けます。
+      Blue is the color of Snowflake. The color of PostgreSQL.<br>
+      The color of curiosity, where ideas come to life.<br>
+      We deliver the ideas that turn ideas into reality.
     </p>
     <div class="hero-actions" style="justify-content:center">
       <a href="#service" class="btn btn-outline">
-        サービスを見る →
+        Our Services →
       </a>
       <a href="contact.html" class="btn btn-primary">
-        お問い合わせ
+        Contact Us
       </a>
     </div>
   </div>
@@ -71,27 +69,27 @@
     <div class="badge">Service</div>
     <h2 class="section-title" style="color:#fff">Snowflake as an<br>Operational Apps Platform</h2>
     <p class="section-sub">
-      Snowflakeはデータ分析基盤にとどまりません。業務アプリの実行・配布・管理まで担う新しいプラットフォームとしての使い方を、Blue App Worksが切り拓きます。
+      Snowflake is more than a data analytics platform. Blue App Works unlocks its potential as a new platform for running, distributing, and managing business applications.
     </p>
     <div class="service-layout">
       <div class="service-blueprint">
-        <img src="images/blueprint.svg" alt="Snowflake Platform Architecture Blueprint" />
+        <img src="../images/blueprint.svg" alt="Snowflake Platform Architecture Blueprint" />
       </div>
       <div class="service-points">
         <!-- 01 -->
         <div class="service-point">
           <div class="service-point-num">01</div>
           <div class="service-point-body">
-            <h3>インフラの悩みから解放</h3>
-            <p>既存のSnowflake環境がそのまま業務アプリの実行基盤に。別途サーバー構築不要、セキュリティもそのまま継承。</p>
+            <h3>Free from Infrastructure Hassles</h3>
+            <p>Your existing Snowflake environment becomes the runtime for business apps. No additional servers needed, security model inherited as-is.</p>
           </div>
         </div>
         <!-- 02 -->
         <div class="service-point">
           <div class="service-point-num">02</div>
           <div class="service-point-body">
-            <h3>Marketplaceで入手、または自作して即デプロイ</h3>
-            <p>Marketplaceからワンクリック導入、生成AIで自作したアプリもそのままデプロイ。同一環境で混在利用できます。</p>
+            <h3>Get from Marketplace or Build & Deploy Instantly</h3>
+            <p>Install apps from Marketplace with one click, or deploy AI-generated apps directly. Both run in the same environment.</p>
           </div>
         </div>
         <!-- 03 -->
@@ -99,7 +97,7 @@
           <div class="service-point-num">03</div>
           <div class="service-point-body">
             <h3>Blue App Gallery</h3>
-            <p><span class="sol-free-badge">🆓 無償提供</span><br>Snowflakeの管理操作を意識せず、アプリの利用だけに集中できるSaaS。ギャラリー形式で一覧表示、クリック1つで起動。</p>
+            <p><span class="sol-free-badge">🆓 Free</span><br>A SaaS that lets business users focus purely on using apps — no Snowflake admin knowledge needed. Gallery view with one-click launch.</p>
           </div>
         </div>
       </div>
@@ -113,21 +111,20 @@
     <div class="showcase-inner">
       <div class="showcase-text">
         <h2 class="section-title" style="text-align:left">
-          <span class="hero-line">業務改善アイデアを</span>
-          <span class="hero-line"><span style="color:var(--blue-accent)">すぐ動くアプリ</span>に。</span>
-          <span class="hero-line">組織全体に届ける。</span>
+          <span class="hero-line">Turn workflow ideas</span>
+          <span class="hero-line">into <span style="color:var(--blue-accent)">running apps</span>.</span>
+          <span class="hero-line">Deliver to the entire org.</span>
         </h2>
         <p class="section-sub" style="text-align:left;margin:0 0 32px">
-          生成AIが作ったアプリを、Snowflake上で安全・簡単に起動・管理・共有する
-          ミドルウェア＆ギャラリープラットフォームを提供します。
-          大掛かりなSaaS契約も、複雑なローコード環境も不要です。
+          Launch, manage, and share AI-generated apps on Snowflake — safely and easily.
+          No expensive SaaS contracts. No complex low-code environments.
         </p>
         <div class="hero-actions">
           <a href="contact.html" class="btn btn-primary">
-            デモを依頼する
+            Request a Demo
           </a>
           <a href="#how" class="btn btn-outline" style="color:var(--blue-accent);border-color:var(--blue-accent)">
-            導入の流れを見る →
+            See How It Works →
           </a>
         </div>
       </div>
@@ -199,26 +196,26 @@
 <section class="section" id="problem">
   <div class="container">
     <div class="badge">Problem</div>
-    <h2 class="section-title">なぜ業務アプリは<br>「作れても使われない」のか</h2>
+    <h2 class="section-title">Why Do Business Apps<br>Get Built but Never Used?</h2>
     <p class="section-sub">
-      生成AIの登場でアプリ開発のハードルは劇的に下がりました。
-      しかし「作ること」と「組織で使われること」の間には、まだ大きな壁があります。
+      Generative AI has dramatically lowered the barrier to building apps.
+      But between "building" and "being used across the organization," a significant gap remains.
     </p>
     <div class="problem-grid">
       <div class="problem-card">
         <div class="problem-icon" style="background:#f0fdf4">🚀</div>
-        <h3>配布・展開手段の不在</h3>
-        <p>個人が作ったアプリを隣の人、チーム、部署、全社へとスケールさせる手段がない。アイデアは個人の手元で止まってしまいます。</p>
+        <h3>No Distribution Channel</h3>
+        <p>There's no way to scale apps from one person to a team, department, or entire organization. Ideas stay trapped on individual desktops.</p>
       </div>
       <div class="problem-card">
         <div class="problem-icon" style="background:#fef2f2">🔒</div>
-        <h3>利用者の権限ハードル</h3>
-        <p>Snowflakeの権限設定は専門知識が必要で、一般ユーザーがアプリを起動するたびに管理者対応が発生。日常業務では使い続けられません。</p>
+        <h3>Permission Barriers for Users</h3>
+        <p>Snowflake permissions require expert knowledge. Every time a user wants to launch an app, admin intervention is needed — unsustainable for daily operations.</p>
       </div>
       <div class="problem-card">
         <div class="problem-icon" style="background:#fff7ed">🌐</div>
-        <h3>アプリの乱立・管理難</h3>
-        <p>部門ごとにバラバラにアプリが生まれ、どこに何があるか分からない。バージョン管理も属人化し、ガバナンスが崩壊していきます。</p>
+        <h3>App Sprawl & Management Chaos</h3>
+        <p>Apps spring up across departments with no visibility. Version control becomes ad-hoc, and governance breaks down.</p>
       </div>
     </div>
   </div>
@@ -228,47 +225,45 @@
 <section class="section section-alt" id="how">
   <div class="container">
     <div class="badge">How It Works</div>
-    <h2 class="section-title">3ステップで導入完了</h2>
+    <h2 class="section-title">Get Started in 3 Steps</h2>
     <p class="section-sub">
-      複雑なインフラ構築は不要。Snowflakeアカウントがあればすぐに始められます。
+      No complex infrastructure setup needed. If you have a Snowflake account, you can start right away.
     </p>
     <div class="steps">
       <div class="step">
         <div class="step-circle">🛒</div>
-        <h3>STEP 1<br>Marketplaceから無料インストール</h3>
-        <p>Snowflake MarketplaceでBlue App Galleryを検索し、ワンクリックで環境にインストール。Snowflakeアカウントがあれば今すぐ始められます。</p>
+        <h3>STEP 1<br>Free Install from Marketplace</h3>
+        <p>Search for Blue App Gallery on the Snowflake Marketplace and install with one click. If you have a Snowflake account, you can start today.</p>
       </div>
       <div class="step">
         <div class="step-circle">⚙️</div>
-        <h3>STEP 2<br>権限設定とアプリ登録</h3>
-        <p>管理者がGalleryに必要最小限の権限を付与。既存アプリやAIが生成したアプリをGalleryに登録するだけで、全ユーザーがアクセス可能になります。</p>
+        <h3>STEP 2<br>Configure Permissions & Register Apps</h3>
+        <p>Admins grant minimal permissions to Gallery. Register existing apps or AI-generated apps, and they become accessible to all users instantly.</p>
       </div>
       <div class="step">
         <div class="step-circle">▶️</div>
-        <h3>STEP 3<br>クリックで起動・組織へ展開</h3>
-        <p>利用者はGallery画面でアプリを選んでクリック。権限の複雑さを意識せずアプリを起動・利用。横展開も管理者の操作だけで完了します。</p>
+        <h3>STEP 3<br>Click to Launch & Roll Out</h3>
+        <p>Users simply browse the Gallery and click to launch apps. No permission complexity. Organization-wide rollout is just an admin action away.</p>
       </div>
     </div>
   </div>
 </section>
 
-
-
 <!-- ========== PRICING ========== -->
 <section class="section section-alt" id="pricing">
   <div class="container">
     <div class="badge">Pricing</div>
-    <h2 class="section-title">料金について</h2>
+    <h2 class="section-title">Pricing</h2>
     <p class="section-sub">
-      現在はβ提供期間として、Blue App GalleryおよびBlue App Gallery Operatorはすべて<strong>無償</strong>でご利用いただけます。
+      During our beta period, Blue App Gallery and Blue App Gallery Operator are available completely <strong>free of charge</strong>.
     </p>
 
     <!-- Free banner -->
     <div class="pricing-free-banner">
       <div class="pfb-icon">🎁</div>
       <div class="pfb-body">
-        <div class="pfb-title">エンドユーザー向けには、ずっと無償で。</div>
-        <p class="pfb-desc">Blue App Gallery（SaaS）および Blue App Gallery Operator（Snowflake Marketplace）は、現在無償でご利用いただけます。業務ユーザーが安心してアプリを使い続けられるよう、エンドユーザー向けには今後も無償で提供し続けることを目指しています。</p>
+        <div class="pfb-title">Free for end users — always.</div>
+        <p class="pfb-desc">Blue App Gallery (SaaS) and Blue App Gallery Operator (Snowflake Marketplace) are currently free. We aim to keep them free for end users going forward, so business users can confidently keep using their apps.</p>
       </div>
     </div>
 
@@ -276,20 +271,20 @@
     <div class="pricing-model-grid">
       <div class="pricing-model-card">
         <div class="pmcard-icon">🤝</div>
-        <h3>アプリプロバイダーの方へ</h3>
+        <h3>For App Providers</h3>
         <p>
-          業務パッケージをSnowflake Marketplaceという新たなチャネルとして確立したいとお考えの企業担当者様、ぜひご連絡ください。将来的にはSnowflake Native Apps対応から出品・プロモーション支援まで、パートナーとして伴走することを目指しています。
+          If you're looking to establish Snowflake Marketplace as a new distribution channel for your business applications, let's talk. We aim to support partners from Snowflake Native Apps development to listing and promotion.
         </p>
-        <a href="contact.html?type=marketplace" class="btn btn-primary" style="margin-top:20px;border-radius:var(--radius)">お問い合わせ →</a>
+        <a href="contact.html?type=marketplace" class="btn btn-primary" style="margin-top:20px;border-radius:var(--radius)">Contact Us →</a>
       </div>
       <div class="pricing-model-card pricing-model-card--support">
         <div class="pmcard-icon">🙏</div>
-        <h3>プロジェクトへのご支援について</h3>
+        <h3>Supporting the Project</h3>
         <p>
-          本プロジェクトは、Snowflakeを業務アプリの実行基盤として活用するという新しいアプローチの実証から始まっています。まずは多くの方に使っていただき、その実績と賛同がこのプロジェクトの何よりの推進力になります。
+          This project began as a proof-of-concept for using Snowflake as a runtime for business applications. Having more users is our greatest momentum. We may accept donations in the future for infrastructure costs.
         </p>
         <p style="margin-top:12px">
-          将来的にはインフラ維持のための寄付を募ることも想定しています。無償でのご利用を続けながら、もし本プロジェクトの取り組みにご共感いただけましたら、そのときはぜひご支援のほどよろしくお願いいたします。
+          If this project resonates with you, your support — whether through usage or contribution — would mean the world to us.
         </p>
       </div>
     </div>
@@ -300,28 +295,26 @@
 <section class="section" id="about">
   <div class="container">
     <div class="badge">About</div>
-    <h2 class="section-title">Blue App Worksについて</h2>
+    <h2 class="section-title">About Blue App Works</h2>
     <div class="about-single">
       <p class="about-lead">
-        「アイデアが使われる組織」を作るために。
+        Building organizations where ideas get used.
       </p>
       <p>
-        DXの文脈において、企業・部署・個人が業務改善アイデアをアプリ化しようとする動きが加速しています。
-        生成AIのおかげで「作る」ハードルは劇的に下がりました。
+        In the DX era, companies, departments, and individuals are increasingly turning workflow improvement ideas into apps.
+        Thanks to generative AI, the barrier to "building" has dropped dramatically.
       </p>
       <p>
-        しかし本当の課題は「実行環境の整備」と「組織への浸透」です。
-        Blue App Worksは、Snowflakeを実行基盤として、アプリが生まれてから組織全体で使われるまでの
-        プロセスを一気通貫でサポートします。
+        But the real challenge lies in "runtime infrastructure" and "organizational adoption."
+        Blue App Works uses Snowflake as the runtime to support the entire journey — from app creation to organization-wide usage.
       </p>
       <p>
-        大掛かりなSaaS契約も、複雑なローコードツールも不要。
-        あなたのSnowflake環境を最大限活用し、
-        業務アプリが「作って終わり」ではなく「使われ続ける」仕組みを提供します。
+        No expensive SaaS contracts. No complex low-code tools.
+        Maximize your Snowflake investment, and ensure apps don't just get built — they get used.
       </p>
       <div style="margin-top:32px;display:flex;gap:16px;flex-wrap:wrap">
-        <a href="contact.html" class="btn btn-primary">お問い合わせ</a>
-        <a href="privacy.html" class="btn btn-outline" style="color:var(--blue-accent);border-color:var(--blue-accent)">プライバシーポリシー</a>
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        <a href="privacy.html" class="btn btn-outline" style="color:var(--blue-accent);border-color:var(--blue-accent)">Privacy Policy</a>
       </div>
     </div>
   </div>
@@ -331,14 +324,14 @@
 <section class="section section-dark" style="text-align:center">
   <div class="container">
     <div class="badge">Get Started</div>
-    <h2 style="color:#fff;margin-bottom:16px">今すぐSnowflakeアプリを<br>組織へ届けよう</h2>
+    <h2 style="color:#fff;margin-bottom:16px">Deliver Snowflake Apps<br>Across Your Organization</h2>
     <p style="max-width:520px;margin:0 auto 40px;font-size:1.05rem">
-      まずはデモ環境でBlue App Galleryを体験してください。
-      お気軽にお問い合わせください。
+      Experience Blue App Gallery in a demo environment first.
+      We'd love to hear from you.
     </p>
     <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-      <a href="contact.html" class="btn btn-primary">✉ デモを申し込む</a>
-      <a href="contact.html?type=snowflake" class="btn btn-outline">Snowflake環境を相談する</a>
+      <a href="contact.html" class="btn btn-primary">✉ Request a Demo</a>
+      <a href="contact.html?type=snowflake" class="btn btn-outline">Discuss Your Snowflake Setup</a>
     </div>
   </div>
 </section>
@@ -348,34 +341,33 @@
   <div class="footer-top">
     <div class="footer-brand">
       <div class="footer-logo">
-        <img src="images/logo-white.svg" alt="Blue App Works" />
+        <img src="../images/logo-white.svg" alt="Blue App Works" />
       </div>
       <p class="footer-desc">
-        Snowflake-nativeのアプリ実行・管理プラットフォームを提供。
-        業務改善アイデアを組織全体へ届けます。
+        Snowflake-native app runtime and management platform.
+        Delivering workflow ideas across your entire organization.
       </p>
     </div>
     <div class="footer-col">
-      <h4>サービス</h4>
+      <h4>Service</h4>
       <ul>
         <li><a href="#service">Gallery SaaS</a></li>
-        <li><a href="#service">セルフホスト版</a></li>
-        <li><a href="#service">伴走開発支援</a></li>
-        <li><a href="#pricing">料金</a></li>
+        <li><a href="#service">Self-hosted</a></li>
+        <li><a href="#service">Development Support</a></li>
+        <li><a href="#pricing">Pricing</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>会社情報</h4>
+      <h4>Company</h4>
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#tech">技術スタック</a></li>
-        <li><a href="privacy.html">プライバシーポリシー</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>お問い合わせ</h4>
+      <h4>Contact</h4>
       <ul>
-        <li><a href="contact.html">デモ申し込み</a></li>
+        <li><a href="contact.html">Request a Demo</a></li>
         <li><a href="mailto:contact@blueappworks.com">contact@blueappworks.com</a></li>
         <li><a href="mailto:support@blueappworks.com">support@blueappworks.com</a></li>
       </ul>
@@ -387,7 +379,7 @@
   </div>
 </footer>
 
-<script src="js/lang.js"></script>
+<script src="../js/lang.js"></script>
 <script>
   // hamburger menu
   const hamburger = document.getElementById('hamburger');

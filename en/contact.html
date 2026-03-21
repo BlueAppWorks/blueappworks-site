@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>お問い合わせ / Contact | Blue App Works</title>
-  <meta name="description" content="Blue App Worksへのデモ申し込み・ご相談はこちらから。Snowflakeアプリ活用のご相談、セルフホスト版のお見積もり、伴走支援に関するお問い合わせをお待ちしています。" />
+  <title>Contact | Blue App Works</title>
+  <meta name="description" content="Request a demo, ask questions, or get a quote for Blue App Works. We're here to help you leverage Snowflake for business applications." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="images/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../images/icon.svg" type="image/svg+xml" />
   <link rel="alternate" hreflang="ja" href="https://www.blueappworks.com/contact.html" />
   <link rel="alternate" hreflang="en" href="https://www.blueappworks.com/en/contact.html" />
 </head>
@@ -19,14 +19,14 @@
 <header id="site-header">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
-      <img src="images/logo.svg" alt="Blue App Works" class="nav-logo-img" />
+      <img src="../images/logo.svg" alt="Blue App Works" class="nav-logo-img" />
     </a>
     <nav class="nav-links" id="nav-links">
-      <a href="index.html#problem">課題</a>
-      <a href="index.html#service">サービス</a>
-      <a href="index.html#pricing">料金</a>
+      <a href="index.html#problem">Challenges</a>
+      <a href="index.html#service">Service</a>
+      <a href="index.html#pricing">Pricing</a>
       <a href="index.html#about">About</a>
-      <a href="contact.html" class="nav-cta">お問い合わせ</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
     </nav>
     <div class="hamburger" id="hamburger" role="button" tabindex="0">
       <span></span><span></span><span></span>
@@ -37,8 +37,8 @@
 <!-- PAGE HERO -->
 <div class="page-hero">
   <div class="badge">Contact</div>
-  <h1>お問い合わせ</h1>
-  <p>デモ申し込み・ご相談・お見積もりはこちらから</p>
+  <h1>Contact Us</h1>
+  <p>Request a demo, ask questions, or get a quote</p>
 </div>
 
 <!-- CONTACT CONTENT -->
@@ -46,44 +46,44 @@
 
   <!-- Left: info -->
   <div class="contact-info">
-    <h2>お気軽にご相談ください</h2>
+    <h2>We'd Love to Hear From You</h2>
     <p>
-      Snowflakeアプリの活用、Blue App Galleryのデモ体験、
-      セルフホスト版のお見積もり、伴走支援のご相談など、
-      どんな段階のご質問でもお待ちしています。
+      Whether you're exploring Snowflake apps, want to try Blue App Gallery,
+      need a self-hosted quote, or want development support —
+      we welcome inquiries at any stage.
     </p>
 
     <div class="contact-cards">
       <div class="contact-card">
         <div class="contact-card-icon">✉️</div>
         <div class="contact-card-body">
-          <h4>一般お問い合わせ</h4>
+          <h4>General Inquiries</h4>
           <a href="mailto:contact@blueappworks.com">contact@blueappworks.com</a>
         </div>
       </div>
       <div class="contact-card">
         <div class="contact-card-icon">🛠</div>
         <div class="contact-card-body">
-          <h4>技術サポート</h4>
+          <h4>Technical Support</h4>
           <a href="mailto:support@blueappworks.com">support@blueappworks.com</a>
         </div>
       </div>
       <div class="contact-card">
         <div class="contact-card-icon">⏰</div>
         <div class="contact-card-body">
-          <h4>対応時間</h4>
-          <p>平日 10:00〜18:00（JST）</p>
+          <h4>Business Hours</h4>
+          <p>Weekdays 10:00–18:00 (JST)</p>
         </div>
       </div>
     </div>
 
     <div style="margin-top:32px;padding:20px;background:var(--blue-light);border-radius:var(--radius)">
       <p style="font-size:0.88rem;color:var(--blue-mid);font-weight:600;margin-bottom:8px">
-        🏪 Snowflake Marketplaceでも
+        🏪 Also on Snowflake Marketplace
       </p>
       <p style="font-size:0.85rem;color:var(--blue-mid)">
-        Blue App GalleryはSnowflake Marketplace（近日公開予定）でも無料インストールが可能になります。
-        最新情報はお問い合わせください。
+        Blue App Gallery will soon be available for free installation on the Snowflake Marketplace.
+        Contact us for the latest updates.
       </p>
     </div>
   </div>
@@ -91,72 +91,71 @@
   <!-- Right: form -->
   <div>
     <div class="contact-form-card">
-      <h3>お問い合わせフォーム</h3>
+      <h3>Contact Form</h3>
 
-      <!-- Form (static - mailto fallback) -->
       <form id="contact-form" onsubmit="handleSubmit(event)">
         <div class="form-row">
           <div class="form-group">
-            <label for="name">お名前 <span style="color:#ef4444">*</span></label>
-            <input type="text" id="name" name="name" placeholder="山田 太郎" required />
+            <label for="name">Name <span style="color:#ef4444">*</span></label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required />
           </div>
           <div class="form-group">
-            <label for="company">会社名 / 組織名</label>
-            <input type="text" id="company" name="company" placeholder="株式会社サンプル" />
+            <label for="company">Company / Organization</label>
+            <input type="text" id="company" name="company" placeholder="Example Inc." />
           </div>
         </div>
 
         <div class="form-group">
-          <label for="email">メールアドレス <span style="color:#ef4444">*</span></label>
-          <input type="email" id="email" name="email" placeholder="taro@example.com" required />
+          <label for="email">Email <span style="color:#ef4444">*</span></label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required />
         </div>
 
         <div class="form-group">
-          <label for="inquiry-type">お問い合わせ種別 <span style="color:#ef4444">*</span></label>
+          <label for="inquiry-type">Inquiry Type <span style="color:#ef4444">*</span></label>
           <select id="inquiry-type" name="inquiry-type" required>
-            <option value="">選択してください</option>
-            <option value="early-access">Blue App Gallery を先行体験したい</option>
-            <option value="info">Blue App Gallery の詳細を知りたい</option>
-            <option value="selfhost">セルフホスト版のお見積もり</option>
-            <option value="consulting">伴走開発支援のご相談</option>
-            <option value="other">その他</option>
+            <option value="">Please select</option>
+            <option value="early-access">Early access to Blue App Gallery</option>
+            <option value="info">Learn more about Blue App Gallery</option>
+            <option value="selfhost">Self-hosted edition quote</option>
+            <option value="consulting">Development support consultation</option>
+            <option value="other">Other</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label for="snowflake-status">Snowflake利用状況</label>
+          <label for="snowflake-status">Snowflake Usage</label>
           <select id="snowflake-status" name="snowflake-status">
-            <option value="">選択してください（任意）</option>
-            <option value="already">既に利用中</option>
-            <option value="planning">導入を検討中</option>
-            <option value="not-yet">まだ利用していない</option>
-            <option value="unknown">わからない</option>
+            <option value="">Please select (optional)</option>
+            <option value="already">Already using Snowflake</option>
+            <option value="planning">Considering adoption</option>
+            <option value="not-yet">Not using yet</option>
+            <option value="unknown">Not sure</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label for="message">お問い合わせ内容 <span style="color:#ef4444">*</span></label>
-          <textarea id="message" name="message" placeholder="ご質問やご要望の詳細をご記入ください。&#10;例：現在Snowflakeを使っているが、業務アプリの展開に困っている。Blue App Galleryのデモを見てみたい。" required></textarea>
+          <label for="message">Message <span style="color:#ef4444">*</span></label>
+          <textarea id="message" name="message" placeholder="Please describe your questions or requirements.&#10;Example: We're currently using Snowflake but struggling with app distribution. We'd like to see a demo of Blue App Gallery." required></textarea>
         </div>
 
         <p class="form-notice">
-          ご入力いただいた個人情報は、お問い合わせへの対応のみに使用します。
-          詳しくは<a href="privacy.html">プライバシーポリシー</a>をご確認ください。
+          Your personal information will only be used to respond to your inquiry.
+          See our <a href="privacy.html">Privacy Policy</a> for details.
         </p>
 
         <button type="submit" class="btn btn-primary btn-block" style="border-radius:var(--radius);font-size:1rem">
-          送信する →
+          Submit →
         </button>
       </form>
 
       <!-- Success message -->
       <div class="form-success" id="form-success">
         <div class="success-icon">✅</div>
-        <h3>お問い合わせありがとうございます！</h3>
-        <p>内容を確認の上、通常2営業日以内にご返信いたします。<br>
-        <a href="mailto:contact@blueappworks.com">contact@blueappworks.com</a> からメールが届きます。</p>
+        <h3>Thank you for your inquiry!</h3>
+        <p>We'll review your message and respond within 2 business days.<br>
+        You'll receive a reply from <a href="mailto:contact@blueappworks.com">contact@blueappworks.com</a>.</p>
         <div style="margin-top:24px">
-          <a href="index.html" class="btn btn-secondary">← ホームへ戻る</a>
+          <a href="index.html" class="btn btn-secondary">← Back to Home</a>
         </div>
       </div>
     </div>
@@ -164,7 +163,7 @@
     <!-- Alternatives -->
     <div style="margin-top:24px;padding:20px 24px;background:var(--gray-100);border-radius:var(--radius);font-size:0.88rem">
       <p style="color:var(--text-sub)">
-        📧 フォームではなくメール直接でも承ります：
+        📧 Prefer email? Reach us directly at
         <a href="mailto:contact@blueappworks.com" style="font-weight:600">contact@blueappworks.com</a>
       </p>
     </div>
@@ -177,29 +176,29 @@
   <div class="footer-top">
     <div class="footer-brand">
       <div class="footer-logo">
-        <img src="images/logo-white.svg" alt="Blue App Works" />
+        <img src="../images/logo-white.svg" alt="Blue App Works" />
       </div>
-      <p class="footer-desc">Snowflake-nativeのアプリ実行・管理プラットフォームを提供。</p>
+      <p class="footer-desc">Snowflake-native app runtime and management platform.</p>
     </div>
     <div class="footer-col">
-      <h4>サービス</h4>
+      <h4>Service</h4>
       <ul>
         <li><a href="index.html#service">Gallery SaaS</a></li>
-        <li><a href="index.html#service">セルフホスト版</a></li>
-        <li><a href="index.html#pricing">料金</a></li>
+        <li><a href="index.html#service">Self-hosted</a></li>
+        <li><a href="index.html#pricing">Pricing</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>会社情報</h4>
+      <h4>Company</h4>
       <ul>
         <li><a href="index.html#about">About</a></li>
-        <li><a href="privacy.html">プライバシーポリシー</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>お問い合わせ</h4>
+      <h4>Contact</h4>
       <ul>
-        <li><a href="contact.html">お問い合わせフォーム</a></li>
+        <li><a href="contact.html">Contact Form</a></li>
         <li><a href="mailto:contact@blueappworks.com">contact@</a></li>
         <li><a href="mailto:support@blueappworks.com">support@</a></li>
       </ul>
@@ -211,7 +210,7 @@
   </div>
 </footer>
 
-<script src="js/lang.js"></script>
+<script src="../js/lang.js"></script>
 <script>
   // hamburger
   const hamburger = document.getElementById('hamburger');
@@ -241,20 +240,18 @@
     const sfStatus= document.getElementById('snowflake-status').value;
     const message = document.getElementById('message').value;
 
-    const subject = encodeURIComponent(`[Blue App Works お問い合わせ] ${type} - ${name}`);
+    const subject = encodeURIComponent(`[Blue App Works Inquiry] ${type} - ${name}`);
     const body = encodeURIComponent(
-      `お名前: ${name}\n` +
-      `会社名: ${company}\n` +
-      `メール: ${email}\n` +
-      `種別: ${type}\n` +
-      `Snowflake利用状況: ${sfStatus}\n\n` +
+      `Name: ${name}\n` +
+      `Company: ${company}\n` +
+      `Email: ${email}\n` +
+      `Type: ${type}\n` +
+      `Snowflake Status: ${sfStatus}\n\n` +
       `---\n${message}`
     );
 
-    // Open mailto
     window.location.href = `mailto:contact@blueappworks.com?subject=${subject}&body=${body}`;
 
-    // Show success after small delay
     setTimeout(() => {
       form.style.display = 'none';
       const successEl = document.getElementById('form-success');
